@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --color: white;
+  --size: 200px;
+}
+p {
+  color: var(--color);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+svg {
+  width: 10px;
+  height: 10px;
+  color: var(--color);
+  font-size: 20px;
+  position: absolute;
+  inset: 40px 40px auto auto;
+}
+.box {
+  display: inline-block;
+  width: 350px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+.red {
+  background: rgb(254, 191, 150);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 191, 150, 1) 0%,
+    rgba(254, 148, 150, 1) 49%,
+    rgba(255, 78, 103, 1) 100%
+  );
+}
+.blue {
+  background: rgb(143, 201, 247);
+  background: linear-gradient(
+    90deg,
+    rgba(143, 201, 247, 1) 0%,
+    rgba(38, 167, 255, 1) 49%,
+    rgba(23, 145, 228, 1) 100%
+  );
+}
+.green {
+  background: rgb(126, 217, 210);
+  background: linear-gradient(
+    90deg,
+    rgba(126, 217, 210, 1) 0%,
+    rgba(50, 211, 193, 1) 49%,
+    rgba(0, 213, 188, 1) 100%
+  );
+}
+
+.first-text {
+  font-size: 20px;
+  margin: 40px 0 25px 40px;
+}
+.numbers {
+  font-size: 35px;
+  margin: 0 0 0 40px;
+}
+.last-text {
+  font-size: 18px;
+  margin: 70px 0 0 40px;
+}
+.circle::after,
+.circle::before {
+  content: '';
+  height: var(--size);
+  width: var(--size);
+  background-color: var(--color);
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.3;
+}
+.circle::after {
+  inset: auto -35px -90px auto;
+}
+.circle::before {
+  inset: -20px -90px auto auto;
+}
