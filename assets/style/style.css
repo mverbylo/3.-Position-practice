@@ -5,12 +5,12 @@
   --color: white;
   --size: 200px;
 }
-p {
+.text {
   color: var(--color);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-svg {
+.svg {
   width: 10px;
   height: 10px;
   color: var(--color);
