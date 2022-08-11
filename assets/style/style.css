@@ -25,6 +25,7 @@ svg {
   margin: 10px;
   border-radius: 5px;
   position: relative;
+  overflow: hidden;
 }
 .red {
   background: rgb(254, 191, 150);
@@ -53,7 +54,6 @@ svg {
     rgba(0, 213, 188, 1) 100%
   );
 }
-
 .first-text {
   font-size: 20px;
   margin: 40px 0 25px 40px;
